@@ -40,7 +40,7 @@ Put a new composer.json in an empty directory, and let composer download the req
 
 `composer.phar install`
 
-Let composer generate the autoload file
+Let composer generate the autoload file in vendor/autoload.php
 
 `composer.phar dump-autoload`
 
