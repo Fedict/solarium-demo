@@ -25,7 +25,8 @@ See also https://lucene.apache.org/solr/guide/8_5/uploading-data-with-solr-cell-
 
 Stop and restart Solr
 
-`bin/solr stop -Djetty.host=127.0.0.1` 
+`bin/solr stop -Djetty.host=127.0.0.1`
+
 `bin/solr start -Djetty.host=127.0.0.1` 
 
 ## Install PHP Composer
