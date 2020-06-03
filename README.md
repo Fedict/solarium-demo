@@ -47,3 +47,10 @@ Let composer generate the autoload file in vendor/autoload.php
 ## Run test script
 
 `php test.php`
+
+This will add two PDF files to Solr index. Tika/Solr will try to reuse as much metadata from the PDF as possible, and automatically create fields. Each document is also given two additional fields (not part of the PDF-metdata): a custom ID and a date.
+
+Then two queries are performed and the name + all fields are displayed:
+
+- a full text search on the word `virtueel` (one result)
+- a full text search on the word `BOSA` - which is mentioned in both documents - plus filtering on date field (less than Jan 1st, 2020) (also one result) 
